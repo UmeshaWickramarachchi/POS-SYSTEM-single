@@ -133,11 +133,11 @@
                 <table class="table table-bordered" id="content-table">
                     <thead class="text-white">
                     <tr id="header">
-                        <th>ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Contact</th>
                         <th>Address</th>
-                        <th>GDSE/DEP</th>
+
 
 
                     </tr>
@@ -149,7 +149,7 @@
                         <td>Umesha</td>
                         <td>Wickckramarachchi</td>
                         <td>Horana</td>
-                        <td>GDSE</td>
+
 
                     </tr>
 
@@ -159,7 +159,7 @@
                         <td>Umesha</td>
                         <td>Wickckramarachchi</td>
                         <td>Horana</td>
-                        <td>GDSE</td>
+
 
                     </tr>
 
@@ -169,7 +169,7 @@
                         <td>Umesha</td>
                         <td>Wickckramarachchi</td>
                         <td>Horana</td>
-                        <td>GDSE</td>
+
 
                     </tr>
 
@@ -179,7 +179,7 @@
                         <td>Umesha</td>
                         <td>Wickckramarachchi</td>
                         <td>Horana</td>
-                        <td>GDSE</td>
+
 
                     </tr>
 
@@ -210,6 +210,122 @@
 
 <!--Items-->
 
+
+
+<div id="item-section" class="container">
+    <div class="row">
+
+
+        <div class="col col-xxl-8 col-xl-8 col-lg-4 col-md-4 col-sm-12">
+
+
+            <form>
+                <div class="mb-3 col-md-6">
+                    <label for="customer-id" class="form-label">Item-Code ID</label>
+                    <input type="number" class="form-control content" id="item-code">
+
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="name" class="form-label">Item Name</label>
+                    <input type="text" class="form-control content" id="item-name">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="contact" class="form-label">Price</label>
+                    <input type="text" class="form-control content" id="price">
+
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="customer-id" class="form-label">Quantity</label>
+                    <input type="number" class="form-control content" id="qty">
+
+                </div>
+
+
+
+
+                <table class="table table-bordered">
+                    <thead class="text-white">
+                    <tr id="">
+                        <th>Customer ID</th>
+                        <th>Customer Name</th>
+                        <th>Contact</th>
+                        <th>Address</th>
+
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td>S001</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+
+
+                    </tr>
+
+                    <tr>
+
+                        <td>S002</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+
+
+                    </tr>
+
+                    <tr>
+
+                        <td>S003</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+
+
+                    </tr>
+
+                    <tr>
+
+                        <td>S004</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+
+
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+
+            </form>
+        </div>
+
+
+
+
+        <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-success" type="button">Add newItem</button>
+                <button class="btn btn-primary" type="button">Update</button>
+                <button class="btn btn-warning" type="button">Delete</button>
+                <button class="btn btn-danger" type="button">Clear</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
 <script src="assets/lib/jquery.min.js"></script>
 <script src="assets/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 
@@ -218,8 +334,19 @@
 
     $('#home-nav').on('click', () => {
         $('#home').css('display', 'block');
+        $('#item-section').css('display', 'none');
         $('#customer-section').css('display', 'none');
     });
+
+    $('#item-nav').on('click', () => {
+        $('#item-section').css('display', 'block');
+        $('#home').css('display', 'none');
+        $('#customer-section').css('display', 'none');
+    });
+
+
+
+
 
     $('#customer-nav').on('click', () => {
         $('#home').css('display', 'none');
