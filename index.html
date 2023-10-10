@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .nav-bar{
+            background: white;
+            height: 80px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        }
+        #logo{
+            color: #FF7900;
+            font-weight: bolder;
+        }
+        .home{
+            margin: 4rem;
+        }
+        .card{
+            background: #CCD5AE;
+            border-radius: 4em;
+        }
+        .customer-img{
+
+            width: 60%;
+            margin: 0 auto;
+        }
+        .view{
+            background: #FFC107;
+            border: #FFC107;
+        }
+    </style>
+
+</head>
+<body>
+<nav class="nav-bar">
+    <a href="" class="navbar-brand fs-1 ms-3 text-#FF7900" id="logo">Grocery</a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active mx-4 text-black fs-5" aria-current="page" id="home-nav" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mx-4 text-black fs-5" id="item-nav" href="#">Item</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mx-4 text-black fs-5" id="customer-nav" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link mx-4 text-black fs-5" id="order-nav" href="#">Orders</a>
+        </li>
+    </ul>
+</nav>
+
+<section id="home" class="home section-padding">
+    <div class="row">
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center mb-3" style="width: 30rem; height: 30rem">
+                <img src="assets/img/customers-50.png" class="customer-img" alt="">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-1">Customers</h5>
+
+                    <a href="#" class="btn btn-primary view">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center mb-3" style="width: 30rem; height: 30rem">
+                <img src="assets/img/customers-50.png" class="customer-img" alt="">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-1">Customers</h5>
+
+                    <a href="#" class="btn btn-primary view">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-center mb-3" style="width: 30rem; height: 30rem">
+                <img src="assets/img/customers-50.png" class="customer-img" alt="">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold fs-1">Customers</h5>
+
+                    <a href="#" class="btn btn-primary view">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--Customers-->
+
+<div id="customer-section" class="container">
+    <div class="row">
+
+
+        <div class="col col-xxl-8 col-xl-8 col-lg-4 col-md-4 col-sm-12">
+
+
+            <form>
+                <div class="mb-3 col-md-6">
+                    <label for="customer-id" class="form-label">Customer ID</label>
+                    <input type="number" class="form-control content" id="customer-id">
+
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="name" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control content" id="name">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="contact" class="form-label">Contact</label>
+                    <input type="text" class="form-control content" id="contact">
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="address">Address</label>
+                    <textarea class="form-control content" placeholder="Enter your address" id="address"></textarea>
+
+                </div>
+
+
+
+
+                <table class="table table-bordered" id="content-table">
+                    <thead class="text-white">
+                    <tr id="header">
+                        <th>ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Address</th>
+                        <th>GDSE/DEP</th>
+
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td>S001</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+                        <td>GDSE</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>S002</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+                        <td>GDSE</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>S003</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+                        <td>GDSE</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>S004</td>
+                        <td>Umesha</td>
+                        <td>Wickckramarachchi</td>
+                        <td>Horana</td>
+                        <td>GDSE</td>
+
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+
+            </form>
+        </div>
+
+
+
+
+        <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-success" type="button">Add new Customer</button>
+                <button class="btn btn-primary" type="button">Update</button>
+                <button class="btn btn-warning" type="button">Delete</button>
+                <button class="btn btn-danger" type="button">Clear</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!--Items-->
+
+<script src="assets/lib/jquery.min.js"></script>
+<script src="assets/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+
+<script>
+    $('#customer-section').css('display', 'none');
+
+    $('#home-nav').on('click', () => {
+        $('#home').css('display', 'block');
+        $('#customer-section').css('display', 'none');
+    });
+
+    $('#customer-nav').on('click', () => {
+        $('#home').css('display', 'none');
+        $('#customer-section').css('display', 'block');
+    });
+</script>
+
+</body>
+</html>

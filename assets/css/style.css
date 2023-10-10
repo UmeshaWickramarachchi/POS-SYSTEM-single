@@ -1,0 +1,41 @@
+.login-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    background-image: url('../img/login-img.jpg');
+    width:50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.right{
+    width:40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.text{
+    background: #ccd5ae;
+    border-radius: 10px;
+
+
+
+
+}
+#login-btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 70%;
+    background-color: #FFC107;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
