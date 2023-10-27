@@ -11,13 +11,13 @@ const loadItemData = () => {
     item_db.map((item, index) => {
         console.log(item);
         let record = `<tr>
-<td class="item_code">${item.item_code}</td>
-<td class="item_name">${item.item_name}</td>
-<td class="price">${item.price}</td>
-<td class="qty">${item.qty}</td>
-</tr>`;
-        $("#item-tbl-body").append(record);
-    })
+        <td class="item_code">${item.item_code}</td>
+        <td class="item_name">${item.item_name}</td>
+        <td class="price">${item.price}</td>
+        <td class="qty">${item.qty}</td>
+        </tr>`;
+                $("#item-tbl-body").append(record);
+            })
 };
 
 $("#saveItem-btn>button[type='button']").on("click", () => {

@@ -8,13 +8,13 @@ const loadCustomerData = () => {
     customer_db.map((item, index) => {
         console.log(item);
         let record = `<tr>
-<td class="customer_id">${item.customer_id}</td>
-<td class="customer_name">${item.customer_name}</td>
-<td class="contact">${item.contact}</td>
-<td class="address">${item.address}</td>
-</tr>`;
+            <td class="customer_id">${item.customer_id}</td>
+            <td class="customer_name">${item.customer_name}</td>
+            <td class="contact">${item.contact}</td>
+            <td class="address">${item.address}</td>
+            </tr>`;
         $("#customer-tbl-body").append(record);
-    })
+    });
 };
 
 //Save Customer
@@ -43,7 +43,6 @@ $("#saveCustomer-btn>button[type='button']").eq(1).on("click", () => {
 
     // load student data
     loadCustomerData();
-
 });
 
 //Update Customer
@@ -94,9 +93,7 @@ $("#customer-btns>button[type='button']").eq(2).on("click", () => {
             )
             loadCustomerData();
         }
-    })
-
-
+    });
 
 })
 
